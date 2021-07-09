@@ -5,48 +5,72 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="css/fontello.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Encode+Sans+SC:wght@500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Gothic+A1:wght@200&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300&display=swap" rel="stylesheet">
-    <title>Blog</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/fontello.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Calc</title>
 </head>
 
-<body>
-    <div class="cont-all">
-        <hr>
-        <div class="cont-description">
-            <div class="cont-text">
-                <p>Blog of</p>
-                <h2>MARLIN</h2>
-                <h2> GUTIERREZ</h2>
-                <p>METEOROLOGY AND WEB DEVELOPER</p>
+<body class="body-light">
+    <div class="calc calc-light">
+        <div class="screen">
+            <img src="img/tenor.gif" class="hidden" id="gif" alt="">
+            <div class="save-result">
+                <span class="back-res back-res-light half" id="back-res-top-half"></span>
+                <span class="back-res back-res-light" id="back-res-top"></span>
+                <span class="back-res back-res-light" id="back-res-medium"></span>
+                <span class="back-res back-res-light" id="back-res-bottom"></span>
             </div>
+            <span class="result result-light" id="result"></span>
         </div>
-        <div class="cont-photo">
-            <div class="cont-links">
-                <a href="mailto:marlin.gu7@gmail.com">infomail.com</a>
-                <a href="playlist.html">www.playlist.com</a>
+        <div class="mode">
+            <div class="btn-mode btn-mode-light" id="btn-mode">
+                <button id="mode" class="circle"></button>
             </div>
-            <div class="cont-media">
-                <ul>
-                    <li><a href="https://www.linkedin.com/in/marlin-gutierrez-rivera-301b00213/" target="_blank"><i
-                                class="icon-linkedin-squared"></i></a></li>
-                    <li><a href="https://www.instagram.com/marlin.gu7/" target="_blank"><i
-                                class="icon-instagram-1"></i></a></li>
-                    <li><a href="https://twitter.com/MarlinG48844029" target="_blank"><i
-                                class="icon-twitter-circled"></i></a></li>
-                </ul>
+            <p class="show p-light" id="p-light">Switch to dark theme</p>
+            <p class="hidden p-dark" id="p-dark">Switch to light theme</p>
+            <button class="btn-up btn-up-light"><i class="icon-resize-vertical i-light" id="icon-vertical"></i></button>
+        </div>
+        <div class="numbers">
+            <div class="cont-columns">
+                <button class="btn btn-C-light" id="btn-C">C</button>
+                <button class="btn sec-operation-light" id="btn-square">√</button>
+                <button class="btn btn-number-light" id="btn-7">7</button>
+                <button class="btn btn-number-light" id="btn-4">4</button>
+                <button class="btn btn-number-light" id="btn-1">1</button>
+                <button class="btn btn-number-light" id="btn-dot">.</button>
+            </div>
+            <div class="cont-columns">
+                <button class="btn sec-operation-light" id="btn-initial-par">(</button>
+                <button class="btn sec-operation-light" id="btn-percent">%</button>
+                <button class="btn btn-number-light" id="btn-8">8</button>
+                <button class="btn btn-number-light" id="btn-5">5</button>
+                <button class="btn btn-number-light" id="btn-2">2</button>
+                <button class="btn btn-number-light" id="btn-0">0</button>
+            </div>
+            <div class="cont-columns">
+                <button class="btn sec-operation-light" id="btn-final-par">)</button>
+                <button class="btn sec-operation-light" id="btn-plus-minus">±</button>
+                <button class="btn btn-number-light" id="btn-9">9</button>
+                <button class="btn btn-number-light" id="btn-6">6</button>
+                <button class="btn btn-number-light" id="btn-3">3</button>
+                <button class="btn btn-delete-light" id="btn-delete"><i class="icon-cancel-alt i-dark"></i></button>
+            </div>
+            <div class="cont-columns">
+                <button class="btn princ-operation-light" id="btn-mult"><span>&#215;</span></button>
+                <button class="btn princ-operation-light" id="btn-div"><span>&#247;</span></button>
+                <button class="btn princ-operation-light" id="btn-minus">-</button>
+                <button class="btn princ-operation-light" id="btn-plus">+</button>
+                <button class="btn btn-equal-light" id="btn-equal">=</button>
             </div>
         </div>
     </div>
+    <script src="javascript.js"></script>
 </body>
-
 </html>
