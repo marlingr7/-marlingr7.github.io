@@ -1,6 +1,10 @@
+html {
+  height: 97%;
+}
+
 body {
   background: rgba(199, 199, 199, 255);
-  height: auto;
+  height: 100%;
   width: auto;
   display: flex;
   justify-content: center;
@@ -8,7 +12,7 @@ body {
 }
 
 hr {
-  height: 96%;
+  height: 96.5%;
   width: 1px;
   opacity: 0.4;
   position: absolute;
@@ -18,7 +22,7 @@ hr {
 
 .cont-all {
   width: 35%;
-  height: 620px;
+  height: 100%;
   display: flex;
   flex-direction: column;
   box-shadow: 10px 10px 20px rgba(98, 91, 91, 255);
@@ -82,7 +86,7 @@ h2 {
   width: 40%;
   height: 20%;
   margin-bottom: 5%;
-  margin-left: 2.5%;
+  margin-left: 3%;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -120,7 +124,7 @@ i{
   color:  rgb(230, 225, 225);
 }
 
-@media screen and (max-width:980px) {
+@media screen and (max-width:1050px) {
   .cont-all{
     width: 50%;
   }
@@ -152,10 +156,6 @@ i{
   
   .cont-media{
     width: 50%;
-  }
-
-  hr{
-    height: 93%;
   }
 }
 
