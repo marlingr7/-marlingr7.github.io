@@ -1,9 +1,22 @@
+:root {
+  --shadow-light: 2px 2px 3px rgba(224, 224, 225, 255), -2px -2px 3px white;
+  --shadow-dark: 2px 2px 3px rgba(36, 39, 42, 255),
+    -2px -2px 3px rgba(83, 85, 87, 255);
+  --background-numbers-light: rgba(243, 243, 245, 255);
+  --background-number-dark: rgba(64, 65, 69, 255);
+}
+
+html {
+  height: 98.5%;
+  margin: 0;
+}
+
 body {
   display: flex;
   align-items: center;
   justify-content: center;
   width: auto;
-  height: auto;
+  height: 100%;
 }
 
 .body-light {
@@ -22,7 +35,7 @@ body {
   display: flex;
   flex-direction: column;
   width: 23%;
-  height: 600px;
+  height: 90%;
   border-radius: 20px;
   padding: 10px;
 }
@@ -45,8 +58,24 @@ body {
   box-shadow: 20px 20px 10px rgba(27, 33, 33, 255);
 }
 
+.calc {
+  animation: fadeInDown 1s;
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20%);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
+
 .screen {
-  width: 95%;
+  width: 99%;
   height: 23%;
   display: flex;
   justify-content: flex-end;
@@ -57,14 +86,13 @@ body {
 
 img {
   width: 100%;
-  height: 98%;
+  height: 90%;
   z-index: 1;
   border-radius: 20px;
-  margin-left: 2%;
 }
 
 .save-result {
-  width: 100%;
+  width: 95%;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -94,7 +122,7 @@ img {
 
 .result {
   background: transparent;
-  width: 100%;
+  width: 95%;
   height: 35%;
   text-align: end;
   font-size: 40px;
@@ -187,14 +215,13 @@ P {
 }
 
 .btn-up-light {
-  background: rgba(243, 243, 245, 255);
-  box-shadow: 2px 2px 3px rgba(224, 224, 225, 255), -2px -2px 3px white;
+  background: var(--background-numbers-light);
+  box-shadow: var(--shadow-light);
 }
 
 .btn-up-dark {
-  background: rgba(64, 65, 69, 255);
-  box-shadow: 2px 2px 3px rgba(36, 39, 42, 255),
-    -2px -2px 3px rgba(83, 85, 87, 255);
+  background: var(--background-numbers-dark);
+  box-shadow: var(--shadow-dark);
 }
 
 .i-light {
@@ -233,87 +260,84 @@ P {
   outline: none;
 }
 
+.btn:hover {
+  transform: scale(1, 1.1);
+}
+
 .btn-number-light {
-  background: rgba(243, 243, 245, 255);
+  background: var(--background-numbers-light);
   color: rgba(68, 69, 72, 255);
-  box-shadow: 2px 2px 3px rgba(224, 224, 225, 255), -2px -2px 3px white;
+  box-shadow: var(--shadow-light);
 }
 
 .btn-number-dark {
-  background: rgba(58, 59, 63, 255);
+  background: var(--background-numbers-dark);
   color: rgba(135, 134, 130, 255);
-  box-shadow: 2px 2px 3px rgba(36, 39, 42, 255),
-    -2px -2px 3px rgba(83, 85, 87, 255);
+  box-shadow: var(--shadow-dark);
 }
 
 .btn-C-light {
   background: rgba(254, 185, 45, 255);
   color: rgba(255, 250, 192, 255);
-  box-shadow: 2px 2px 3px rgba(224, 224, 225, 255), -2px -2px 3px white;
+  box-shadow: var(--shadow-light);
 }
 
 .btn-C-dark {
   background: rgba(252, 184, 43, 255);
   color: rgba(255, 252, 220, 255);
-  box-shadow: 2px 2px 3px rgba(36, 39, 42, 255),
-    -2px -2px 3px rgba(83, 85, 87, 255);
+  box-shadow: var(--shadow-dark);
 }
 
 .princ-operation-light {
   background: rgba(225, 213, 233, 255);
   color: rgba(85, 25, 119, 255);
-  box-shadow: 2px 2px 3px rgba(224, 224, 225, 255), -2px -2px 3px white;
+  box-shadow: var(--shadow-light);
 }
 
 .princ-operation-dark {
   background: rgba(74, 53, 94, 255);
   color: rgba(185, 134, 216, 255);
-  box-shadow: 2px 2px 3px rgba(36, 39, 42, 255),
-    -2px -2px 3px rgba(83, 85, 87, 255);
+  box-shadow: var(--shadow-dark);
 }
 
 .sec-operation-light {
   background: rgba(246, 241, 229, 255);
   color: rgba(185, 168, 134, 255);
-  box-shadow: 2px 2px 3px rgba(224, 224, 225, 255), -2px -2px 3px white;
+  box-shadow: var(--shadow-light);
 }
 
 .sec-operation-dark {
   background: rgba(75, 67, 59, 255);
   color: rgba(157, 128, 66, 255);
-  box-shadow: 2px 2px 3px rgba(36, 39, 42, 255),
-    -2px -2px 3px rgba(83, 85, 87, 255);
+  box-shadow: var(--shadow-dark);
 }
 
 .btn-delete-light {
   background: rgba(231, 233, 237, 255);
-  box-shadow: 2px 2px 3px rgba(224, 224, 225, 255), -2px -2px 3px white;
+  box-shadow: var(--shadow-light);
 }
 
 .btn-delete-dark {
   background: rgba(39, 41, 43, 255);
-  box-shadow: 2px 2px 3px rgba(36, 39, 42, 255),
-    -2px -2px 3px rgba(83, 85, 87, 255);
+  box-shadow: var(--shadow-dark);
 }
 
 .btn-equal-light {
   width: 95%;
   height: 30%;
   background: rgba(156, 44, 243, 255);
-  box-shadow: 2px 2px 3px rgba(224, 224, 225, 255), -2px -2px 3px white;
+  box-shadow: var(--shadow-light);
   color: rgba(255, 245, 255, 255);
   font-size: 40px;
-  box-shadow: 2px 2px 3px rgba(224, 224, 225, 255), -2px -2px 3px white;
 }
 
 .btn-equal-dark {
+  width: 95%;
   height: 30%;
   background: rgba(141, 39, 219, 255);
-  box-shadow: 2px 2px 3px rgba(224, 224, 225, 255), -2px -2px 3px white;
   color: rgba(255, 244, 255, 255);
-  font-size: 30px;
-  box-shadow: 2px 2px 3px rgba(36, 39, 42, 255),
-    -2px -2px 3px rgba(83, 85, 87, 255);
+  font-size: 40px;
+  box-shadow: var(--shadow-dark);
 }
 
 .show {
@@ -349,7 +373,6 @@ span {
 @media screen and (max-width: 450px) {
   .calc {
     width: 100%;
-    height: 650px;
     margin: 0;
   }
 
