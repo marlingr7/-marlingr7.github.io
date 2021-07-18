@@ -111,57 +111,61 @@ li {
   display: inline;
 }
 
-a{
+a {
   text-decoration: none;
   font-size: 10px;
-  font-family: 'Source Code Pro', monospace;
+  font-family: "Source Code Pro", monospace;
   font-weight: 600;
   color: rgb(230, 225, 225);
 }
 
-i{
+i {
   font-size: 20px;
-  color:  rgb(230, 225, 225);
+  color: rgb(230, 225, 225);
 }
 
-@media screen and (max-width:1050px) {
-  .cont-all{
+@media screen and (max-width: 1050px) {
+  .cont-all {
     width: 50%;
   }
-  
 }
 
-@media screen and (max-width:700px) {
-  .cont-all{
+@media screen and (max-width: 700px) {
+  .cont-all {
     width: 70%;
   }
-  
+
+  hr {
+    margin-left: 5%;
+  }
+
+  .cont-links {
+    margin-left: 7%;
+  }
 }
 
-@media screen and (max-width:500px) {
-  .cont-all{
+@media screen and (max-width: 500px) {
+  .cont-all {
     width: 90%;
   }
-  
 }
 
-@media screen and (max-width:400px) {
-  .cont-all{
+@media screen and (max-width: 400px) {
+  .cont-all {
     width: 100%;
   }
 
-  .cont-links{
+  .cont-links {
     width: 50%;
   }
-  
-  .cont-media{
+
+  .cont-media {
     width: 50%;
   }
 }
 
-@media screen and (max-width:300px) {
-  i{
+@media screen and (max-width: 300px) {
+  i {
     font-size: 15px;
   }
 }
-
