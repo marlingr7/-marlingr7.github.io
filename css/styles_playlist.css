@@ -1,5 +1,5 @@
 html {
-  height: 97%;
+  height: 100%;
 }
 
 body {
@@ -9,13 +9,15 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: 0;
+  padding: 0;
 }
 
 .cont-all {
   width: 70%;
   height: 80%;
   display: flex;
-  box-shadow: 0px 10px 10px rgba(101, 101, 101, 255);
+  box-shadow: 0px 5px 5px rgba(101, 101, 101, 255);
   border-left: 1px solid rgba(192, 192, 192, 255);
 }
 
@@ -38,6 +40,15 @@ body {
   align-items: flex-start;
 }
 
+.cont-text div {
+  height: 30%;
+  width: 100%;
+  justify-self: flex-end;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
 p {
   font-size: 8px;
   font-family: "Gothic A1", sans-serif;
@@ -48,15 +59,6 @@ p {
 
 p:first-of-type {
   font-weight: 900;
-}
-
-.cont-text div {
-  height: 30%;
-  width: 100%;
-  justify-self: flex-end;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
 }
 
 .cont-text div:last-of-type {
@@ -85,16 +87,16 @@ p:first-of-type {
   align-items: flex-end;
 }
 
-.cont-music-list p {
-  margin-top: 5%;
-  margin-right: 10%;
-  line-height: 0px;
-}
-
 iframe {
   height: 75%;
   width: 100%;
   filter: grayscale(100%);
+}
+
+.cont-music-list p {
+  margin-top: 5%;
+  margin-right: 10%;
+  line-height: 0px;
 }
 
 .cont-description {
@@ -123,7 +125,20 @@ img {
   color: rgb(230, 222, 222);
 }
 
-@media screen and (max-width: 870px) {
+@media screen and (max-width: 1200px) {
+  .cont-all {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .cont-all {
+    width: 100%;
+    height: 80%;
+  }
+}
+
+@media screen and (max-width: 900px) {
   .cont-all {
     width: 50%;
     height: 100%;
@@ -164,8 +179,26 @@ img {
   }
 }
 
+@media screen and (max-width: 700px) {
+  .cont-all {
+    width: 60%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .cont-all {
+    width: 70%;
+  }
+}
+
 @media screen and (max-width: 450px) {
   .cont-all {
     width: 100%;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  img {
+    width: 70%;
   }
 }

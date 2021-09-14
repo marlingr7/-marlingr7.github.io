@@ -1,5 +1,5 @@
 html {
-  height: 97%;
+  height: 100%;
 }
 
 body {
@@ -9,23 +9,25 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+.cont-all {
+  width: 35%;
+  height: 96%;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 10px 10px 20px rgba(98, 91, 91, 255);
 }
 
 hr {
-  height: 96.5%;
+  height: 95.5%;
   width: 1px;
   opacity: 0.4;
   position: absolute;
   margin: 0 0 0 2%;
   z-index: 1;
-}
-
-.cont-all {
-  width: 35%;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  box-shadow: 10px 10px 20px rgba(98, 91, 91, 255);
 }
 
 .cont-description {
@@ -35,6 +37,15 @@ hr {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.cont-text {
+  width: 80%;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
 }
 
 p {
@@ -61,15 +72,6 @@ h2 {
   font-family: "Playfair Display", serif;
 }
 
-.cont-text {
-  width: 80%;
-  height: 80%;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  justify-content: center;
-}
-
 .cont-photo {
   background: url(../img/fotoMarlin.jpg) white;
   background-size: cover;
@@ -80,6 +82,14 @@ h2 {
   display: flex;
   justify-content: space-around;
   align-items: flex-end;
+}
+
+a {
+  text-decoration: none;
+  font-size: 10px;
+  font-family: "Source Code Pro", monospace;
+  font-weight: 600;
+  color: rgb(230, 225, 225);
 }
 
 .cont-links {
@@ -109,14 +119,6 @@ li {
   text-align: left;
   padding-top: 10px;
   display: inline;
-}
-
-a {
-  text-decoration: none;
-  font-size: 10px;
-  font-family: "Source Code Pro", monospace;
-  font-weight: 600;
-  color: rgb(230, 225, 225);
 }
 
 i {
@@ -153,6 +155,11 @@ i {
 @media screen and (max-width: 400px) {
   .cont-all {
     width: 100%;
+    height: 100%;
+  }
+
+  hr {
+    height: 100%;
   }
 
   .cont-links {
